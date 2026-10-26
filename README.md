@@ -100,3 +100,13 @@ A web-based Employee Management System built using Python and Django.
 
 ### About Me
 ![About Me](screenshots/about-me.png)
+## Screenshots
+
+### Dashboard
+![Employee Management System Dashboard](screenshots/dashboard.png)
+
+### Employee List
+![Employee List and Search](screenshots/employee-list.png)
+
+### About Me
+![Developer About Me Page](screenshots/about-me.png)
