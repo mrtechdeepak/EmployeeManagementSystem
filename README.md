@@ -89,3 +89,14 @@ A web-based Employee Management System built using Python and Django.
 ---
 
 *This project was developed for learning and demonstrating Python/Django web development skills.*
+
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Employee List
+![Employee List](screenshots/employee-list.png)
+
+### About Me
+![About Me](screenshots/about-me.png)
