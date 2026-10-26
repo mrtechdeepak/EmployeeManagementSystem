@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <center>
+    <meta charset="UTF-8">
+    <title>Delete Employee</title>
+</head>
+<body>
+    <h1>Employee Management System</h1>
+
+    <h2>Delete Employee</h2>
+
+    <p>
+        Do you want {{ employee.name }} delete this?
+    </p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirm Delete</button>
+    </form>
+
+    <br>
+
+    <a href="{% url 'employee_list' %}">Cancel</a>
+</center>
+</body>
+</html>

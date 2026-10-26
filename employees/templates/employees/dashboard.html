@@ -1,0 +1,84 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="{% static 'employees/style.css' %}">
+</head>
+<body>
+    <main class="page">
+
+        <header class="topbar">
+            <div>
+                <div class="brand">Deepak<span> Admin.</span></div>
+                <p class="subtitle">Employee Management System</p>
+            </div>
+            <a class="btn" href="{% url 'employee_add' %}">
+                + Add Employee
+            </a>
+        </header>
+
+        <section>
+            <h1>Dashboard Overview</h1>
+            <p class="subtitle">
+                Welcome back! Here's your employee summary.
+            </p>
+        </section>
+
+        <section class="card-grid">
+            <div class="card">
+                <div class="card-label">Total Employees</div>
+                <div class="card-number">{{ total_employees }}</div>
+                <p class="subtitle">Employees in your database</p>
+            </div>
+
+            <div class="card">
+                <div class="card-label">Management System</div>
+                <div class="card-number">Active</div>
+                <p class="subtitle">Your dashboard is running</p>
+            </div>
+
+            <div class="card">
+                <div class="card-label">Quick Action</div>
+                <div class="card-number">+ New</div>
+                <p class="subtitle">Add an employee record</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Quick Access</h2>
+            <p class="subtitle">
+                Manage employee records from one place.
+            </p>
+
+            <p>
+                <a class="btn" href="{% url 'employee_list' %}">
+                    View All Employees
+                </a>
+            </p>
+
+            <p>
+                <a href="{% url 'employee_add' %}">
+                    + Create New Employee
+                </a>
+            </p>
+
+            <p>
+                <center>
+                <a href="/admin/">
+                    Open Django Admin Mr Deepak →
+                </a>
+        </center>
+            </p>
+        </section>
+
+        <footer class="subtitle">
+            Employee Management System · Built with Python & Django
+        </footer>
+
+    </main>
+</body>
+</html>
